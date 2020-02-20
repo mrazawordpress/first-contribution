@@ -1,0 +1,1 @@
+alert('external is ready')

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<title> JavaScript</title>
+	<h1 id="title">JavaScript Practice</h1>
+	<h2>Using HTML</h2>
+	<input type="text" id="Name" value="Ali">
+	<input type="text" id="Name1" value="Hasnain">
+	<input type="text" id="Name2" value="Saqlain"><br><br>
+	<input type="text" id="Name3">
+	<input type="text" id="Name4">
+	<button onclick="document.getElementById('Name3').value=document.getElementById('Name1').value;">Press me!</button>
+	<button onclick="document.getElementById('Name4').value=document.getElementById('Name2').value;">Press me!</button>
+	<h2>Using JavaScript</h2>
+	<span id="dat">To View Current Time and Date Click on "Click Me!"</span><br><br>
+	<input type="text" id="Name5" value="Ali">
+	<input type="text" id="Name6" value="Hasnain">
+	<input type="text" id="Name7" value="Saqlain"><br><br>
+	<input type="text" id="Name8">
+	<input type="text" id="Name9">
+	<button onclick="Changes()">Click Me!</button>
+	
+</html>
+
+
+<script>
+		alert("Welcome!");
+function Changes(){
+		alert("Be Carefull!");
+		document.getElementById('dat').innerHTML=Date();
+		document.getElementById("Name8").value=document.getElementById("Name7").value;
+		document.getElementById("Name9").value=document.getElementById("Name5").value;
+		document.getElementById("title").style.color = "blue";
+		document.getElementById("title").style.backgroundColor = "Orange";
+		document.getElementById("title").style.alignContent = "right";
+}
+</script>
